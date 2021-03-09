@@ -1,0 +1,186 @@
+
+/* .heading */
+
+body {
+    background-image: linear-gradient(45deg, #ffafbd, #ffc3a0, #ff9a9e);
+    background-size: 300%;
+    animation: gradient 15s ease infinite alternate;
+    scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+}
+
+@keyframes gradient{
+    0%{
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 100%;
+    }
+    100%{
+        background-position: 0% 50%;
+    }
+}
+
+/* content */
+
+#midtext p{
+    display: flex;
+    justify-content: center;
+    font-size: 50px;
+    font-family: Bebas Neue;
+}
+
+.heading {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.heading h2:nth-child(2) {
+    padding: 0 20px 0 30px;
+}
+
+.content p {
+    font-family: Roboto;
+}
+
+.container {
+    position: relative;
+}
+
+.container .card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    /* max-width: 300px; */
+    background: #fff;
+    margin: 30px 10px;
+    padding: 20px 10px;
+    box-shadow: 0 5px 20px rgba(0,0,0, 0.5);
+    transition: 0.3s ease-in-out;
+}
+
+.container .card .imgBx {
+    position: relative;
+    /* width: 260px; */
+}
+
+.container .card .imgBx img {
+     width: 260px;
+     border-radius: 10px;
+}
+
+.container .content {
+    margin: 0 0 40px 40px;
+}
+
+.container .content a {
+    color: black;
+}
+
+.text1 {
+    display: none;
+}
+
+.text2 {
+    display: none;
+}
+
+.text3 {
+    display: none;
+}
+
+.card .content:hover > .text1{
+    display: inline;
+}
+
+.card .content:hover > .text2{
+    display: inline;
+}
+
+.card .content:hover > .text3{
+    display: inline;
+}
+
+/* footer  */
+
+footer {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    bottom: 0;
+    background-color: white;
+}
+
+footer a{
+    text-decoration: none;
+    color: black;
+}
+
+footer p {
+    font-family: Bebas Neue;
+    font-size: 25px;
+}
+
+
+
+/* Media Query */
+
+@media (min-width: 600px){
+    .container .card:hover {
+        min-height: 420px;
+    }
+    .container .card {
+        min-height: 215px;
+    }
+    #more1{
+        display: inline !important;
+    }
+    #more2{
+        display: inline !important;
+    }
+    #more3{
+        display: inline !important;
+    }
+    .btn {
+        display: none;
+    }
+}
+
+@media (max-width: 600px){
+    .container .card {
+        display: grid;
+        place-items: center;
+        position: relative;
+        /* max-width: 300px; */
+        background: #fff;
+        margin: 30px 10px;
+        padding: 20px 10px;
+        box-shadow: 0 5px 20px rgba(0,0,0, 0.5);
+
+    }
+
+    #more1{
+        display: none;
+    }
+    #more2{
+        display: none;
+    }
+    #more3{
+        display: none;
+    }
+
+    .heading h2:nth-child(2) {
+        padding: 0 20px;
+    }
+    
+    footer {
+        position: fixed;
+    }
+
+    footer p {
+        font-family: Bebas Neue;
+        font-size: 20px;
+    }
+}

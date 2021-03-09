@@ -79,30 +79,6 @@ body {
     color: black;
 }
 
-.text1 {
-    display: none;
-}
-
-.text2 {
-    display: none;
-}
-
-.text3 {
-    display: none;
-}
-
-.card .content:hover > .text1{
-    display: inline;
-}
-
-.card .content:hover > .text2{
-    display: inline;
-}
-
-.card .content:hover > .text3{
-    display: inline;
-}
-
 /* footer  */
 
 footer {
@@ -122,8 +98,6 @@ footer p {
     font-family: Bebas Neue;
     font-size: 25px;
 }
-
-
 
 /* Media Query */
 
@@ -145,6 +119,29 @@ footer p {
     }
     .btn {
         display: none;
+    }
+    #text1 {
+        display: none;
+    }
+    
+    #text2 {
+        display: none;
+    }
+    
+    #text3 {
+        display: none;
+    }
+    
+    .card .content:hover > #text1{
+        display: inline !important;
+    }
+    
+    .card .content:hover > #text2{
+        display: inline !important;
+    }
+    
+    .card .content:hover > #text3{
+        display: inline !important;
     }
 }
 
@@ -168,6 +165,15 @@ footer p {
         display: none;
     }
     #more3{
+        display: none;
+    }
+    #text1{
+        display: none;
+    }
+    #text2{
+        display: none;
+    }
+    #text3{
         display: none;
     }
 

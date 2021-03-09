@@ -15,7 +15,7 @@ Gradient background, responsive website, card
 ```
 ### JS
 ```
-Button yang bisa nampilin text dan hide
+Button yang bisa nampilin text dan hide cuma ada pas < 600px
 ```
 
 Semuanya menggunakan vanilla, tidak ada plugin yang dipakai
